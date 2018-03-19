@@ -1,19 +1,25 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
-const webpack = require('webpack')
+const webpack = require('webpack');
 
 module.exports = {
-    entry: './src/app.js',
+    entry: './src/app.jsx',
     output: {
         path: path.resolve(__dirname, 'dist'),
         publicPath: "/dist/",
         filename: 'js/app.js'
     },
+    resolve: {
+        alias: {
+            page:path.resolve(__dirname, 'src/page'),
+        },
+
+    },
     module: {
         rules: [
             {
-                test: /\.js$/,
+                test: /\.jsx$/,
                 exclude: /(node_modules|bower_components)/,
                 use: {
                     loader: 'babel-loader',
