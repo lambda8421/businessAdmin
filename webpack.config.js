@@ -13,6 +13,7 @@ module.exports = {
     resolve: {
         alias: {
             page:path.resolve(__dirname, 'src/page'),
+            component:path.resolve(__dirname, 'src/component'),
         },
 
     },
@@ -69,7 +70,10 @@ module.exports = {
         ]
     },
     devServer: {
-        port:5000
+        port:5000,
+        historyApiFallback:{
+            index:'/dist/index.html'
+        }
     },
     plugins: [
         new HtmlWebpackPlugin({
