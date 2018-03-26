@@ -7,7 +7,6 @@
 import React        from 'react';
 import { Link }     from 'react-router-dom';
 import MUtil        from 'util/mm.jsx'
-import Order        from 'service/order-service.jsx'
 
 import PageTitle    from 'component/page-title/index.jsx';
 import ListSearch   from './index-list-search.jsx';
@@ -15,8 +14,10 @@ import TableList    from 'util/table-list/index.jsx';
 import Pagination   from 'util/pagination/index.jsx';
 
 
+import {getOrderList} from 'service/orderService.jsx';
+
+
 const _mm           = new MUtil();
-const _order        = new Order();
 
 class OrderList extends React.Component{
     constructor(props){
@@ -40,8 +41,17 @@ class OrderList extends React.Component{
             listParam.orderNo = this.state.orderNumber;
         }
         // 请求接口
-        _order.getOrderList(listParam).then(res => {
-            this.setState(res);
+        // _order.getOrderList(listParam).then(res => {
+        //     this.setState(res);
+        // }, errMsg => {
+        //     this.setState({
+        //         list : []
+        //     });
+        //     _mm.errorTips(errMsg);
+        // });
+
+        getOrderList(listParam).then(res => {
+            this.setState(res.data);
         }, errMsg => {
             this.setState({
                 list : []
