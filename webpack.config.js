@@ -25,13 +25,14 @@ module.exports = {
             component   : path.resolve(__dirname, 'src/component'),
             util        : path.resolve(__dirname, 'src/util'),
             service     : path.resolve(__dirname, 'src/service')
-        }
+        },
+        extensions: ['.js','.jsx'],
     },
     module: {
         rules: [
             // react(jsx)语法的处理
             {
-                test: /\.jsx$/,
+                test: /\.(jsx|'')$/,
                 exclude: /(node_modules)/,
                 use: {
                     loader: 'babel-loader',
