@@ -10,6 +10,8 @@ import Order        from 'service/order-service.jsx'
 import PageTitle    from 'component/page-title/index.jsx';
 import TableList    from 'util/table-list/index.jsx';
 
+import {getOrderDetail} from "service/orderService.jsx";
+
 import './detail.scss';
 const _mm           = new MUtil();
 const _order        = new Order();
@@ -28,12 +30,22 @@ class OrderDetail extends React.Component{
     // 加载商品详情
     loadOrderDetail(){
         _order.getOrderDetail(this.state.orderNumber).then((res) => {
+            console.log(res);
             this.setState({
                 orderInfo : res
             });
         }, (errMsg) => {
             _mm.errorTips(errMsg);
         });
+
+        // getOrderDetail(this.state.orderNumber).then((res) => {
+        //     console.log(res);
+        //     this.setState({
+        //         orderInfo : res
+        //     });
+        // }, (errMsg) => {
+        //     _mm.errorTips(errMsg);
+        // });
     }
     // 发货操作
     onSendGoods(){

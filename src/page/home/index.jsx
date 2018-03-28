@@ -45,7 +45,8 @@ class Home extends React.Component{
 
         // getHomeCount().then(res => {
         //          console.log(res)
-        // });
+        //     return res
+        // }).catch(req=>console.log(req));
     }
     render(){
         return (
