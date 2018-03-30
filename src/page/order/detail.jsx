@@ -29,16 +29,7 @@ class OrderDetail extends React.Component{
     }
     // 加载商品详情
     loadOrderDetail(){
-        _order.getOrderDetail(this.state.orderNumber).then((res) => {
-            console.log(res);
-            this.setState({
-                orderInfo : res
-            });
-        }, (errMsg) => {
-            _mm.errorTips(errMsg);
-        });
-
-        // getOrderDetail(this.state.orderNumber).then((res) => {
+        // _order.getOrderDetail(this.state.orderNumber).then((res) => {
         //     console.log(res);
         //     this.setState({
         //         orderInfo : res
@@ -46,6 +37,16 @@ class OrderDetail extends React.Component{
         // }, (errMsg) => {
         //     _mm.errorTips(errMsg);
         // });
+
+        getOrderDetail(this.state.orderNumber).then((res) => {
+            console.log(res)
+            this.setState({
+                orderInfo : res
+            });
+        }).catch((errMsg) => {
+            console.log(errMsg);
+            _mm.errorTips(errMsg);
+        })
     }
     // 发货操作
     onSendGoods(){

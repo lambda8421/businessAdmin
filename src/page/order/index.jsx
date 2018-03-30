@@ -43,8 +43,18 @@ class OrderList extends React.Component{
         }
         //请求接口
 
+        // _order.getOrderList(listParam).then(res => {
+        //     console.log(res)
+        //     this.setState(res.data);
+        // }, errMsg => {
+        //     this.setState({
+        //         list : []
+        //     });
+        //     _mm.errorTips(errMsg);
+        // });
+
+
         getOrderList(listParam).then(res => {
-            console.log(res)
             this.setState(res.data);
         }, errMsg => {
             this.setState({
