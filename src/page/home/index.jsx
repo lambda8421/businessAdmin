@@ -1,7 +1,7 @@
 /*
-* @Author: Rosen
+* @Author: Mofei
 * @Date:   2018-01-23 18:03:55
-* @Last Modified by:   Rosen
+* @Last Modified by:   Mofei
 * @Last Modified time: 2018-01-26 13:41:51
 */
 
@@ -9,9 +9,10 @@ import React        from 'react';
 import { Link }     from 'react-router-dom';
 
 import MUtil        from 'util/mm.jsx'
-import {getHomeCount}    from 'service/statisticService.jsx'
+import Statistic    from 'service/statistic-service.jsx'
 
 const _mm           = new MUtil();
+const _statistic    = new Statistic();
 
 import PageTitle    from 'component/page-title/index.jsx';
 import './index.scss'
@@ -30,15 +31,9 @@ class Home extends React.Component{
         this.loadCount();
     }
     loadCount(){
-        // _statistic.getHomeCount().then(res => {
-        //     this.setState(res);
-        //     console.log(res)
-        // }, errMsg => {
-        //     _mm.errorTips(errMsg);
-        // });
-
-        getHomeCount().then(res => {
-            this.setState(res.data);
+        _statistic.getHomeCount().then(res => {
+            this.setState(res);
+            console.log(res)
         }, errMsg => {
             _mm.errorTips(errMsg);
         });
