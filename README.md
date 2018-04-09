@@ -11,7 +11,7 @@ A business admin system,use react,react-dom,webpack
 
 ## 项目初始化方式:
 ```
-安装依赖包： yarn
+安装依赖包： yarn install
 ```
 
 ## 开发模式运行:
