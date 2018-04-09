@@ -1,7 +1,7 @@
 /*
-* @Author: Rosen
+* @Author: Mofei
 * @Date:   2018-01-13 11:26:52
-* @Last Modified by:   Rosen
+* @Last Modified by:   Mofei
 * @Last Modified time: 2018-02-07 10:35:01
 */
 const path              = require('path');

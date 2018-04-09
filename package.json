@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "repository": "git@gitee.com:happymmall/admin-v2-fe.git",
-  "author": "Rosen <gaorunsheng1@126.com>",
+  "author": "Mofei <gaorunsheng1@126.com>",
   "license": "MIT",
   "scripts": {
     "dev"       : "node_modules/.bin/webpack-dev-server",
