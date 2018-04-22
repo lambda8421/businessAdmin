@@ -104,6 +104,7 @@ module.exports = {
         historyApiFallback: {
             index: '/dist/index.html'
         },
+        //happymall api
         proxy : {
             '/manage' : {
                 target: 'http://admintest.happymmall.com',
