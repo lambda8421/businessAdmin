@@ -1,9 +1,9 @@
 {
-  "name": "admin-v2-fe",
+  "name": "businessAdmin",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "git@gitee.com:happymmall/admin-v2-fe.git",
-  "author": "Mofei <gaorunsheng1@126.com>",
+  "repository": "https://github.com/lambda8421/businessAdmin.git",
+  "author": "Mofei",
   "license": "MIT",
   "scripts": {
     "dev"       : "node_modules/.bin/webpack-dev-server",
