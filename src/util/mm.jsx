@@ -8,7 +8,6 @@
 class MUtil{
     request(param){
         return new Promise((resolve, reject) => {
-            console.log(url,data);
             $.ajax({
                 type        : param.type        || 'get',
                 url         : param.url         || '',

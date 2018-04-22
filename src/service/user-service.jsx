@@ -25,14 +25,14 @@ class User{
         if(typeof username !== 'string' || username.length ===0){
             return {
                 status: false,
-                msg: 'Username can not be empty！'
+                msg: '用户名不能为空！'
             }
         }
         // 判断密码为空
         if(typeof password !== 'string' || password.length ===0){
             return {
                 status: false,
-                msg: 'Password can not be empty！'
+                msg: '密码不能为空！'
             }
         }
         return {
