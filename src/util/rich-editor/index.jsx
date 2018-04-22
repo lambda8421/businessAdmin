@@ -1,4 +1,9 @@
-
+/*
+* @Author: Mofei
+* @Date:   2018-02-02 17:13:05
+* @Last Modified by:   Mofei
+* @Last Modified time: 2018-02-02 21:46:07
+*/
 import React        from 'react';
 import Simditor     from 'simditor';
 import 'simditor/styles/simditor.scss';

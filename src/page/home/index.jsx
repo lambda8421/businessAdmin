@@ -17,7 +17,6 @@ const _statistic    = new Statistic();
 import PageTitle    from 'component/page-title/index.jsx';
 import './index.scss'
 
-
 class Home extends React.Component{
     constructor(props){
         super(props);
@@ -33,15 +32,9 @@ class Home extends React.Component{
     loadCount(){
         _statistic.getHomeCount().then(res => {
             this.setState(res);
-            console.log(res)
         }, errMsg => {
             _mm.errorTips(errMsg);
         });
-
-        // getHomeCount().then(res => {
-        //          console.log(res)
-        //     return res
-        // }).catch(req=>console.log(req));
     }
     render(){
         return (
