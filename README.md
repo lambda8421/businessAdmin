@@ -14,6 +14,11 @@ The app was created using React by create-react-app.  The index.html which is  p
 
 Here is the detail
 
+login info
+
+* username:admin
+* password:admin
+
 ### app
 #### components 
 * subcomponent 
@@ -31,7 +36,7 @@ Here is the detail
 #### service
 *  request api
 
-#### index.js (where react scripts looks for dom render)
+#### app.js (where react scripts looks for dom render)
 
 ## Features
 
@@ -54,7 +59,7 @@ install yarn
  yarn install
 ```
 
-## dev:
+## dev: 
 ```
 yarn run dev
 ```
