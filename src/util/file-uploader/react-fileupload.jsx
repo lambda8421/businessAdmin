@@ -1,9 +1,3 @@
-/*
-* @Author: Rosen
-* @Date:   2018-02-02 12:47:27
-* @Last Modified by:   Rosen
-* @Last Modified time: 2018-02-02 13:12:18
-*/
 
 import React    from 'react';
 import PT       from 'prop-types';

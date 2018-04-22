@@ -1,30 +1,69 @@
-# businessAdmin
+# businessAdmin(React)
 A business admin system,use react,react-dom,webpack
 
-# 后台管理系统安装和启动方式
+> Groupon-app built using A business admin system,use react,react-dom,webpack.
 
-## 环境依赖:
+
+### Articles
+
+- [Adding Preprocessor to Create React App](https://github.com/facebook/create-react-app/blob/master/packages/react-scripts/template/README.md#adding-a-css-preprocessor-sass-less-etc)
+
+## Implementation
+
+The app was created using React by create-react-app.  The index.html which is  placed in the public folder is the entry file, the src folder contains all of the source code.
+
+Here is the detail
+
+### app
+#### components 
+* subcomponent 
+
+
+####  page
+* all pages and its style files
+
+
+
+
+#### util
+* common files
+
+#### service
+*  request api
+
+#### index.js (where react scripts looks for dom render)
+
+## Features
+
+
+There are some features implemented:
+
+* 
+
+There are some features in the future:
+* 
+
+## dependency:
 ```
-安装 nodejs v6.12.3版本
-安装 yarn
+install nodejs v6.12.3
+install yarn
 ```
 
-## 项目初始化方式:
+## initial:
 ```
-安装依赖包： yarn
+ yarn install
 ```
 
-## 开发模式运行:
+## dev:
 ```
 yarn run dev
 ```
 
-## 线上打包:
-Mac / Linux系统：
+## prod:
+Mac/Linux：
 ```
 yarn run dist
 ```
-Windows系统：
+Windows：
 ```
 yarn run dist_win
-```

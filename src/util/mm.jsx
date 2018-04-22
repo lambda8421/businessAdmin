@@ -1,13 +1,14 @@
 /*
-* @Author: Rosen
+* @Author: Mofei
 * @Date:   2018-01-23 22:54:28
-* @Last Modified by:   Rosen
+* @Last Modified by:   Mofei
 * @Last Modified time: 2018-01-31 14:21:22
 */
 
 class MUtil{
     request(param){
         return new Promise((resolve, reject) => {
+            console.log(url,data);
             $.ajax({
                 type        : param.type        || 'get',
                 url         : param.url         || '',
